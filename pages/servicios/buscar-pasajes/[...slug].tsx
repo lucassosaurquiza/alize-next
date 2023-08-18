@@ -45,7 +45,7 @@ const SearchPage = ({ slug }: SearchPageProps) => {
   }, [])
 
   return (
-    <div className='bg-[#eeee]'>
+    <div>
       <Head>
         <title>Alize viajes y turismo | Pasajes</title>
       </Head>
