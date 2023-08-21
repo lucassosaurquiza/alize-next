@@ -21,19 +21,19 @@ export const Menu = () => {
             </button>
           </div>
           <div className='flex justify-center items-center h-14 border-b '>
-            <Link href="/pages/Viaje" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
+            <Link href="/viaje" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
               <MdOutlineTravelExplore className='text-gray-400 ml-2' />
               <button className='text-[14px] font-semibold hidden sm:hidden lg:block  w-full '> Arma Tu Viaje</button>
             </Link>
           </div>
           <div className='flex justify-center items-center h-14 border-b '>
-            <Link href="/pages/Promociones" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
+            <Link href="/promociones" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
               <BiSolidOffer className='text-gray-400 ml-2' />
               <button className='text-[14px] font-semibold hidden sm:hidden lg:block  w-full '> Promociones</button>
             </Link>
           </div>
           <div className='flex justify-center items-center h-14 border-b '>
-            <Link href="/pages/QuienesSomos" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
+            <Link href="/quienes-somos" className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
               <BsFillBookFill className='text-gray-400 ml-2' />
               <button className='text-[14px] font-semibold hidden sm:hidden lg:block  w-full '>¿Quienes Somos?</button>
             </Link>
