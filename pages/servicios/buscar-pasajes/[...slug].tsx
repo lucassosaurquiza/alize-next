@@ -13,7 +13,7 @@ interface SearchPageProps {
   slug: [string];
 }
 
-const SearchPage = ({ slug }: SearchPageProps) => {
+export default function SearchPage({ slug }: SearchPageProps) {
   const [results, setResults] = useState([])
   const [loading, setLoading] = useState(false)
 
@@ -98,5 +98,3 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
     }
   }
 }
-
-export default SearchPage
