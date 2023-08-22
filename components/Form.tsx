@@ -30,7 +30,7 @@ export const Form = () => {
   }
 
   return (
-    <div className=" sm:mx-auto sm:p-4 sm:max-w-320 md:max-w-600 lg:max-w-1200 lg:mx-40">
+    <div className="p-4">
       <div className='flex justify-center items-center' >
         <h2 className="sm:text-md sm:font-bold md:font-bold md:text-xl text-[#212a30] mb-3">
           Saca tus pasajes desde la comodidad de tu casa.
@@ -48,7 +48,7 @@ export const Form = () => {
         <SelectDestination onSelected={setDestino} selected={destino} placerholder='Destion' />
         <Datepicker
           containerClassName="relative"
-          inputClassName='p-2 h-full w-full rounded flex gap-2 items-center bg-slate-300'
+          inputClassName='p-2 h-full w-full rounded flex gap-2 items-center bg-slate-300 outline-none'
           toggleClassName="absolute top-0 text-gray right-0 h-full px-3 text-gray-400 focus:outline-none disabled:opacity-40 disabled:cursor-not-allowed"
           placeholder={"dd/mm/aa"}
           onChange={handleValueChange}

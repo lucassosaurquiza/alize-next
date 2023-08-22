@@ -11,7 +11,7 @@ export const Menu = () => {
 
 
   return (
-    <div className='sm:hidden lg:block'>
+    <div className='hidden lg:block'>
       <div className='relative'>
         <div className='w-52 fixed bg-white border h-full z-10'>
           <div className='flex justify-center items-center h-14 border-b '>

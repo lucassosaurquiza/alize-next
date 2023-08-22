@@ -48,7 +48,7 @@ export const SelectDestination = ({ onSelected, selected, placerholder }: any) =
         <div className="w-full cursor-default overflow-hidden rounded bg-white text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-300 sm:text-sm">
           <Combobox.Input
             autoComplete="off"
-            className="w-full p-3 bg-slate-300"
+            className="w-full p-3 bg-slate-300 outline-none"
             displayValue={(stop: any) => stop.text}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={placerholder}
