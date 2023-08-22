@@ -86,3 +86,7 @@ body {}
 .planta_alta {
   padding: 7px 9px 7px 9px;
 }
+
+.box-shadow {
+  box-shadow: 0 -3px 11px -5px rgb(0 0 0 / 20%);
+}

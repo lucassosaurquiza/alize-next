@@ -282,10 +282,10 @@ const ButacasPage = () => {
           </Tab.Group>
         </div>
         {/* ESTO CONTIENE LOS BOTONES DE VOLVER Y CONTINUAR */}
-        {/* <div className='flex flex-wrap gap-3 fixed bottom-0 right-0 left-0 p-3 shadow-2xl shadow-red-800'>
+        <div className='flex flex-wrap gap-3 justify-center fixed bottom-0 right-0 left-0 p-4 box-shadow bg-white'>
           <button className='py-3 px-6  rounded-md border border-red-400 text-red-400'>Volver</button>
           <button className='py-3 px-6  rounded-md bg-red-400 text-white'>Continuar</button>
-        </div> */}
+        </div>
       </div>
     </div >
   )
