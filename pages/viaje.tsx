@@ -8,6 +8,7 @@ import { SiYourtraveldottv } from 'react-icons/si'
 import Datepicker from "react-tailwindcss-datepicker";
 import { BsFillPersonFill, BsFillTelephoneFill } from 'react-icons/bs'
 import { AiFillCalendar, AiFillCar, AiOutlineCheck, AiOutlineClose, AiOutlineMail } from 'react-icons/ai'
+import { Layout } from "@/components/Layout"
 
 export default function Viaje() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
@@ -23,23 +24,27 @@ export default function Viaje() {
 
 
   return (
-    <>
 
+    <Layout>
       {/* EL PAPA QUE ENVUELVE A TODOS, "CONTAINER" */}
       <div className=" lg:ml-72 lg:mr-32 sm:mx-4 sm:my-4 ">
 
         {/* ESTO ES EL HEADER DE LA SECCION */}
         <div className="mb-5">
           <h2 className="flex justify-center font-bold pb-5 sm:text-center lg:text-4xl">Arma Tu Viaje</h2>
-          <p className="font-semibold sm:text-sm lg:text-lg">El servicio de “Arma Tu Viaje” te permite contratar un colectivo, para uso completo y exclusivo de grupos de acuerdo a tus necesidades. Te ofrecemos total libertad de elección en cuanto a destinos, servicios y cantidad de personas. El objetivo es facilitar la organización de viajes grupales con fines deportivos, empresariales, políticos, conferencias, recitales o cualquier evento. Nuestro equipo te ayudará a organizar el viaje con el mejor servicio y al precio más conveniente.
-            Para solicitar presupuesto u obtener más información completá la planilla o enviá E-mail a viajesespeciales@alize.com.</p>
+          <p className="font-semibold sm:text-sm lg:text-lg">
+            El servicio de “Arma Tu Viaje” te permite contratar un colectivo, para uso completo y exclusivo de grupos de acuerdo a tus necesidades. Te ofrecemos total libertad de elección en cuanto a destinos, servicios y cantidad de personas. El objetivo es facilitar la organización de viajes grupales con fines deportivos, empresariales, políticos, conferencias, recitales o cualquier evento. Nuestro equipo te ayudará a organizar el viaje con el mejor servicio y al precio más conveniente.
+            Para solicitar presupuesto u obtener más información completá la planilla o enviá E-mail a viajesespeciales@alize.com.
+          </p>
         </div>
 
         {/* ACA EMPIEZA LOS CAMPOS CON LOS FORMULARIOS */}
         <div className="">
           <div className="bg-red-400 rounded-tr-xl rounded-tl-xl p-3">
             <h2 className="text-white flex justify-center text-center font-bold mb-5 lg:text-2xl">Formulario para solicitar un micro</h2>
-            <p className="text-white flex text-center mb-5 sm:text-sm lg:text-lg">Completa el formulario para que podamos ofrecerte un viaje a tu medida, te armamos un presupuesto en base a tus necesidades.</p>
+            <p className="text-white flex text-center mb-5 sm:text-sm lg:text-lg">
+              Completa el formulario para que podamos ofrecerte un viaje a tu medida, te armamos un presupuesto en base a tus necesidades.
+            </p>
           </div>
 
           <div className="border-8 rounded-b-md border-red-400">
@@ -417,6 +422,6 @@ export default function Viaje() {
           </div>
         </div>
       </div >
-    </>
+    </Layout>
   )
 }
