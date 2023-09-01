@@ -112,7 +112,7 @@ export default function Promociones() {
           </div>
         </div>
         {/* CONTENEDOR DE LA SECCION CARROUSEL DE IMAGENES */}
-        <div></div>
+        <div>hola</div>
       </div>
     </Layout>
   )
