@@ -1,5 +1,5 @@
 export interface IPasajes {
-    Promociones: null;
+    Promociones: null; 
     ClaveSolicitud: string;
     IndiceServicio: number;
     FechaSalida: string;
