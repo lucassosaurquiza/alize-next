@@ -1,11 +1,34 @@
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import { Tab } from '@headlessui/react'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const ButacasPage = () => {
+
+  const router = useRouter();
+
+  const seatData = {
+    Butacas: 7,
+    // ... otros datos
+  };
+
+
+
+  const gridElements = [
+    { id: 'tb501', state: 'empty' },
+    { id: 'tb502', state: 'ocup' },
+    // Agrega más objetos aquí según tu estructura de datos
+    // Por ejemplo: { id: 'tb503', state: 'empty' }, { id: 'tb504', state: 'ocup' }, ...
+  ];
+
+
+
   return (
     <div>
       <header className='bg-red-400 p-4'>
-        <p className='text-white'>alize-viajes-turismo.com</p>
+        <Link href='/'>
+          <p className='text-white'>alize-viajes-turismo.com</p>
+        </Link>
       </header>
       <div className='container max-w-6xl mx-auto p-4'>
         <div className='flex border'>
@@ -283,8 +306,8 @@ const ButacasPage = () => {
         </div>
         {/* ESTO CONTIENE LOS BOTONES DE VOLVER Y CONTINUAR */}
         <div className='flex flex-wrap gap-3 justify-center fixed bottom-0 right-0 left-0 p-4 box-shadow bg-white'>
-          <button className='py-3 px-6  rounded-md border border-red-400 text-red-400'>Volver</button>
-          <button className='py-3 px-6  rounded-md bg-red-400 text-white'>Continuar</button>
+          <button onClick={() => router.back()} className='py-3 px-6  rounded-md border border-red-400 text-red-400'>Volver</button>
+          <button onClick={() => router.push('/servicios/datos')} className='py-3 px-6  rounded-md bg-red-400 text-white'>Continuar</button>
         </div>
       </div>
     </div >
