@@ -7,9 +7,14 @@ import { IPasajes } from '@/interfaces/Pasaje';
 import { Disclosure, Transition } from '@headlessui/react';
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import { BsSearch } from 'react-icons/bs';
+import ModalVerDetalles from './ui/ModalVerDetalles';
+import { Loading } from '@/components/Loading';
+import { useState } from 'react';
 
 
 export const CardItem = (pasaje: IPasajes) => {
+
+
   const router = useRouter();
   console.log(router.query.slug)
 
@@ -110,11 +115,11 @@ export const CardItem = (pasaje: IPasajes) => {
                 </div>
               </div>
             </div>
-            <div className='w-full flex border border-red-400 text-red-400 rounded-md lg:items-center'>
-              <p className='w-full text-center'>Ver Detalles</p>
+            <div className='w-full flex  lg:items-center'>
+              <ModalVerDetalles />
             </div>
             <div className='w-full flex items-center justify-center'>
-              <span className='flex items-center justify-center'>Quedan 9 asientos disponibles</span>
+              <span className='flex items-center justify-center'>Quedan {pasaje.Butacas} asientos disponibles</span>
             </div>
           </div>
         </div>
