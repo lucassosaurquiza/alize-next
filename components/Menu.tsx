@@ -14,8 +14,8 @@ export const Menu = () => {
     <div className='hidden lg:block'>
       <div className='relative'>
         <div className='w-52 fixed bg-white border h-full z-10'>
-          <div className='flex justify-center items-center h-14 border-b '>
-            <button onClick={() => setShowLoginModal(true)} className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
+          <div onClick={() => setShowLoginModal(true)} className='flex justify-center items-center h-14 border-b '>
+            <button  className='w-full h-11  rounded-md flex items-center justify-center cursor-pointer border-gray-300 hover:bg-gray-200'>
               <BiSolidUser className='text-gray-400 ml-2' />
               <p className='text-[14px] font-semibold hidden sm:hidden lg:block  w-full '>Iniciar Sesion</p>
             </button>

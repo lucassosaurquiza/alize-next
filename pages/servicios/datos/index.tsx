@@ -55,7 +55,6 @@ const index = () => {
       <header className='bg-red-400 p-4'>
         <Link href='/'>
           <p className=' w-full text-white'>alize-viajes-turismo.com</p>
-
         </Link>
       </header>
 

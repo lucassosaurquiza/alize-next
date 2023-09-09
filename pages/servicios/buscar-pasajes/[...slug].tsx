@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 import { BsArrowRight, BsFillBusFrontFill } from 'react-icons/bs';
-
 import { GetServerSideProps } from 'next/types'
-
 import { getDestinations } from '@/client/destination'
-
 import { CardItem } from '@/components/CardItem';
 import { Loading } from '@/components/Loading';
 import Head from 'next/head';
+import { Link } from 'lucide-react';
 
 interface SearchPageProps {
   slug: [string];
@@ -47,11 +45,12 @@ export default function SearchPage({ slug }: SearchPageProps) {
   return (
     <div>
       <Head>
-        <title>Alize viajes y turismo | Pasajes</title>
+        <button>Alize viajes y turismo | Pasajes</button>
       </Head>
-
       <header className='bg-red-400 p-4 '>
-        <p className='text-white'>alize-viajes-turismo.com</p>
+        <Link href='/'>
+          <p className='text-white'>alize-viajes-turismo.com</p>
+        </Link>
       </header>
       <div className='border max-w-5xl m-auto p-4'>
         <div className='flex gap-2'>

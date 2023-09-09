@@ -1,7 +1,7 @@
 export const LOGO_PROVIDER = {
     'RIO URUGUAY': {
       name: 'RIO URUGUAY',
-      url: 'https://d2idryjws00qar.cloudfront.net/aiv/gra/image/home/logo-app-cdp-rio-uruguay.png'
+      url: `${process.env.PUBLIC_URL}/assets/rio-uruguay.png`
     },
     'FLECHABUS': {
       name: 'FLECHABUS',
