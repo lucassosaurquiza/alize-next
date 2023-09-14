@@ -6,6 +6,8 @@ import { AiOutlineUser, AiFillHeart } from 'react-icons/ai'
 import { useUiContext } from '@/context/UiContext'
 import { AlizeIcon } from './AlizeIcon'
 import { Button } from './ui/Button'
+import ModalHamburguesa from './ui/ModalHamburguesa'
+import { BiUser } from 'react-icons/bi'
 
 export const Header = () => {
   const { setShowLoginModal, showLoginModal } = useUiContext()
@@ -17,8 +19,8 @@ export const Header = () => {
         <div className="px-4 flex flex-1 justify-between">
           <div className="flex flex-auto items-center justify-start">
             <div className='flex text-center items-center'>
-              <button className='mr-4 p-2 border-none rounded outline-inherit hover:bg-slate-200'>
-                <GiHamburgerMenu />
+              <button className='mr-4 border-none rounded outline-inherit hover:bg-slate-200 md:hidden'>
+                <ModalHamburguesa />
               </button>
               <Link href='/'>
                 <AlizeIcon />
@@ -31,8 +33,11 @@ export const Header = () => {
                 <AiFillHeart className='text-red-500' size={20} />
               </button>
             </div>
-            <div className='hidden lg:block'>
-              <Button isLoading={true} variant='default'>
+            <div className=''>
+              <Button className='block lg:hidden text-white'>
+                <BiUser />
+              </Button>
+              <Button className='hidden lg:block' isLoading={false} variant='default'>
                 <div className='flex items-center'>
                   <AiOutlineUser className='mr-2 text-white' size={16} />
                   <span className='text-white'>
